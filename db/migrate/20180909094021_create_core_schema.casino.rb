@@ -1,6 +1,7 @@
+# This migration comes from casino (originally 20130809135400)
 # In order to support pre-2.0 installations of CASino that included CASinoCore,
 # we must rebuild the un-namespaced CASinoCore schema so that we can upgrade
-class CreateCoreSchema < ActiveRecord::Migration
+class CreateCoreSchema < ActiveRecord::Migration[5.2]
   CoreTables = %w{login_tickets proxy_granting_tickets proxy_tickets service_rules service_tickets ticket_granting_tickets two_factor_authenticators users}
 
   def up

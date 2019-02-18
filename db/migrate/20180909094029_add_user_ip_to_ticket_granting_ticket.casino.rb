@@ -1,4 +1,5 @@
-class AddUserIpToTicketGrantingTicket < ActiveRecord::Migration
+# This migration comes from casino (originally 20151022192752)
+class AddUserIpToTicketGrantingTicket < ActiveRecord::Migration[5.2]
   def up
     add_column :casino_ticket_granting_tickets, :user_ip, :string
   end

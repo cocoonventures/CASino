@@ -1,4 +1,5 @@
-class RenameBaseModels < ActiveRecord::Migration
+# This migration comes from casino (originally 20130809135401)
+class RenameBaseModels < ActiveRecord::Migration[5.2]
   def up
     # Login Tickets
     rename_table :login_tickets, :casino_login_tickets
